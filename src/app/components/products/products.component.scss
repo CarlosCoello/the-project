@@ -1,0 +1,16 @@
+.formp {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-around;
+
+    &__input {
+        width: 80%;
+        line-height: 2rem;
+    }
+
+    &__button {
+        width: 15%;
+        line-height: 2rem;
+    }
+}

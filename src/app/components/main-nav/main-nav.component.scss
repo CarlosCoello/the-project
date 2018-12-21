@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background: white;
+    font-family: 'Monsterrat', sans-serif;
+
+   &__brand-link {
+       color: #ff6b6b;
+       text-decoration: none;
+   }
+
+   &__menu-item {
+       list-style: none;
+   }
+
+   &__menu-link {
+       color: #4ecdc4;
+       text-decoration: none;
+   }
+}
