@@ -13,11 +13,11 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/dist/the-project-patitas'));
+app.use(express.static(__dirname + '/dist/the-project'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/the-project-patitas/index.html'));
+res.sendFile(path.join(__dirname+'/dist/the-project/index.html'));
 });
 
 // importing controllers
