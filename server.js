@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const PORT = process.env.PORT || 4000;
+const path = require('path');
 const mongoose = require('mongoose');
 
 // connect to db
