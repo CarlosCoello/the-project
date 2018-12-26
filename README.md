@@ -18,7 +18,7 @@ the common folder stores files that will be used across the web app hence the na
 
 # git cloning
 
-git clone the project repo to your local enviroment
+git clone the master branch to your local enviroment
 
 # for local environment front end instructions
 
