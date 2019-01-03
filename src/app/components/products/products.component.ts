@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-products',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  productForm: FormGroup;  
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.productForm = this.formBuilder.group({
+      search: ['', Validators.required]
+    })
   }
 
 }
