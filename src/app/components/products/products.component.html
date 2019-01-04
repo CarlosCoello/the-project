@@ -1,6 +1,6 @@
 <div class="container">
-  <form class="formp">
-    <input type="text" class="formp__input" name="products" placeholder="search for your product">
+  <form [formGroup]="productForm" class="formp">
+    <input type="text" class="formp__input" name="products" placeholder="search for your product" formControlName="search">
     <button type="submit" class="formp__button">search</button>
   </form>
 </div>

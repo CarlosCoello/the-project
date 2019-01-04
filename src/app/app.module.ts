@@ -5,21 +5,27 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
 
 // AppRoutingModule for our routes to work across the app
 import { AppRoutingModule } from './app.routing';
-import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { RegisterComponent } from './components/register/register.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProductsComponent,
-    MainNavComponent
+    MainNavComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
